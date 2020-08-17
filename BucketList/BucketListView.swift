@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+let fileManagament = FileManagement()
+
 struct BucketListView: View {
     var body: some View {
         Text("Hello, World!")
