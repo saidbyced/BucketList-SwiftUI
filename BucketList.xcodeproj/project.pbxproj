@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71334024EA97DB007CD5A1 /* MapView.swift */; };
 		AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */; };
 		AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */; };
 		AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609424EA8BFB00BF8663 /* BucketListView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE71334024EA97DB007CD5A1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AEB2608D24EA8BFA00BF8663 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				AEB260A424EA8C0E00BF8663 /* Shared */,
 				AEB260A624EA8CD900BF8663 /* BucketList */,
 				AEB260A524EA8C2500BF8663 /* Launch */,
+				AE71334024EA97DB007CD5A1 /* MapView.swift */,
 				AEB2609624EA8BFC00BF8663 /* Assets.xcassets */,
 				AEB2609E24EA8BFC00BF8663 /* Info.plist */,
 				AEB2609824EA8BFC00BF8663 /* Preview Content */,
@@ -175,6 +178,7 @@
 			files = (
 				AEB260A824EA8F3F00BF8663 /* FileManagement.swift in Sources */,
 				AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */,
+				AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */,
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
 				AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */,
 			);
