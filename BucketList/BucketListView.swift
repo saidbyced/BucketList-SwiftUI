@@ -12,19 +12,8 @@ let fileManagament = FileManagement()
 
 struct BucketListView: View {
     var body: some View {
-        Text("Hello, World!")
-            .onTapGesture {
-                let string = "Test Message"
-                let url = fileManagament.getDocumentsDirectory().appendingPathComponent("message.txt")
-                
-                do {
-                    try string.write(to: url, atomically: true, encoding: .utf8)
-                    let input = try String(contentsOf: url)
-                    print(input)
-                } catch {
-                    print(error.localizedDescription)
-                }
-            }
+        MapView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
