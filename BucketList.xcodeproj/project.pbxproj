@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */; };
 		AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */; };
-		AEB2609524EA8BFB00BF8663 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609424EA8BFB00BF8663 /* ContentView.swift */; };
+		AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609424EA8BFB00BF8663 /* BucketListView.swift */; };
 		AEB2609724EA8BFC00BF8663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609624EA8BFC00BF8663 /* Assets.xcassets */; };
 		AEB2609A24EA8BFC00BF8663 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */; };
 		AEB2609D24EA8BFC00BF8663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609B24EA8BFC00BF8663 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		AEB2608D24EA8BFA00BF8663 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEB2609424EA8BFB00BF8663 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEB2609424EA8BFB00BF8663 /* BucketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
 		AEB2609624EA8BFC00BF8663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEB2609C24EA8BFC00BF8663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,11 +56,10 @@
 		AEB2608F24EA8BFB00BF8663 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
-				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
-				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
-				AEB2609424EA8BFB00BF8663 /* ContentView.swift */,
+				AEB260A424EA8C0E00BF8663 /* Shared */,
+				AEB260A624EA8CD900BF8663 /* BucketList */,
+				AEB260A524EA8C2500BF8663 /* Launch */,
 				AEB2609624EA8BFC00BF8663 /* Assets.xcassets */,
-				AEB2609B24EA8BFC00BF8663 /* LaunchScreen.storyboard */,
 				AEB2609E24EA8BFC00BF8663 /* Info.plist */,
 				AEB2609824EA8BFC00BF8663 /* Preview Content */,
 			);
@@ -73,6 +72,31 @@
 				AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEB260A424EA8C0E00BF8663 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
+				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AEB260A524EA8C2500BF8663 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				AEB2609B24EA8BFC00BF8663 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		AEB260A624EA8CD900BF8663 /* BucketList */ = {
+			isa = PBXGroup;
+			children = (
+				AEB2609424EA8BFB00BF8663 /* BucketListView.swift */,
+			);
+			name = BucketList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +172,7 @@
 			files = (
 				AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */,
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
-				AEB2609524EA8BFB00BF8663 /* ContentView.swift in Sources */,
+				AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
