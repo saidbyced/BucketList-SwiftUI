@@ -20,6 +20,7 @@ struct BucketListView: View {
                     .edgesIgnoringSafeArea(.all)
             } else {
                 Text("Locked")
+                    .font(.headline)
             }
         }
         .onAppear(perform: authentication.attempt)
