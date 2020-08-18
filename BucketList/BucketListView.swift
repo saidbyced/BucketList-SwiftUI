@@ -10,47 +10,35 @@ import SwiftUI
 import MapKit
 
 struct BucketListView: View {
-    @ObservedObject private var authentication = Authentication()
     @State private var centerCoordinate = CLLocationCoordinate2D()
     
     var body: some View {
-        VStack {
-            if authentication.successful {
-                ZStack {
-                    MapView(centerCoordinate: $centerCoordinate)
-                        .edgesIgnoringSafeArea(.all)
-                    Circle()
-                        .fill(Color.accentColor.opacity(0.3))
-                        .frame(width: 22, height: 22)
-                    Circle()
-                        .fill(Color.accentColor.opacity(0.33))
-                        .frame(width: 2.2, height: 2.2)
-                    VStack {
-                        Spacer()
-                        HStack {
-                            Button(
-                                action: {
-                                    // TODO: Create a new location
-                                },
-                                label: {
-                                    Image(systemName: "plus")
-                                }
-                            )
-                                .padding()
-                                .background(Color.primary.opacity(0.75))
-                                .foregroundColor(.accentColor)
-                                .font(.title)
-                                .clipShape(Circle())
-                                .padding(.bottom, 30)
-                        }
+        ZStack {
+            MapView(centerCoordinate: $centerCoordinate)
+                .edgesIgnoringSafeArea(.all)
+            Circle()
+                .fill(Color.accentColor.opacity(0.3))
+                .frame(width: 22, height: 22)
+            Circle()
+                .fill(Color.accentColor.opacity(0.33))
+                .frame(width: 2.2, height: 2.2)
+            VStack {
+                Spacer()
+                HStack {
+                    Button(
+                        action: {
+                            // TODO: Create a new location
+                    },
+                        label: {
+                            Image(systemName: "plus")
                     }
-                }
-            } else {
-                VStack {
-                    Text("Locked")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    Text("User not authenticated")
+                    )
+                        .padding()
+                        .background(Color.primary.opacity(0.65))
+                        .foregroundColor(.accentColor)
+                        .font(.title)
+                        .clipShape(Circle())
+                        .padding(.bottom, 30)
                 }
             }
         }
