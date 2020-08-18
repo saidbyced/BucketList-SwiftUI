@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-let fileManagament = FileManagement()
-
 struct BucketListView: View {
     @ObservedObject private var authentication = Authentication()
     
