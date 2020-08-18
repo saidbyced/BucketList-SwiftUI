@@ -11,6 +11,7 @@ import MapKit
 
 struct BucketListView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
+    @State private var locations = [MKPointAnnotation]()
     
     var body: some View {
         ZStack {
@@ -27,11 +28,13 @@ struct BucketListView: View {
                 HStack {
                     Button(
                         action: {
-                            // TODO: Create a new location
-                    },
+                            let newLocation = MKPointAnnotation()
+                            newLocation.coordinate = self.centerCoordinate
+                            self.locations.append(newLocation)
+                        },
                         label: {
                             Image(systemName: "plus")
-                    }
+                        }
                     )
                         .padding()
                         .background(Color.primary.opacity(0.65))
