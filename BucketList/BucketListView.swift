@@ -31,7 +31,9 @@ struct BucketListView: View {
             } else {
                 VStack {
                     Text("Locked")
-                        .font(.headline)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    Text("User not authenticated")
                 }
             }
         }
