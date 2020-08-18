@@ -20,13 +20,30 @@ struct BucketListView: View {
                     MapView(centerCoordinate: $centerCoordinate)
                         .edgesIgnoringSafeArea(.all)
                     Circle()
-                        .fill(Color.blue)
-                        .opacity(0.3)
+                        .fill(Color.accentColor.opacity(0.3))
                         .frame(width: 22, height: 22)
                     Circle()
-                        .fill(Color.blue)
-                        .opacity(0.6)
-                        .frame(width: 3, height: 3)
+                        .fill(Color.accentColor.opacity(0.33))
+                        .frame(width: 2.2, height: 2.2)
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Button(
+                                action: {
+                                    // TODO: Create a new location
+                                },
+                                label: {
+                                    Image(systemName: "plus")
+                                }
+                            )
+                                .padding()
+                                .background(Color.primary.opacity(0.75))
+                                .foregroundColor(.accentColor)
+                                .font(.title)
+                                .clipShape(Circle())
+                                .padding(.bottom, 30)
+                        }
+                    }
                 }
             } else {
                 VStack {
