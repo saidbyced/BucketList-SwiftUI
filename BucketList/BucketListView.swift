@@ -11,9 +11,18 @@ import SwiftUI
 let fileManagament = FileManagement()
 
 struct BucketListView: View {
+    @ObservedObject private var authentication = Authentication()
+    
     var body: some View {
-        MapView()
-            .edgesIgnoringSafeArea(.all)
+        VStack {
+            if authentication.successful {
+                MapView()
+                    .edgesIgnoringSafeArea(.all)
+            } else {
+                Text("Locked")
+            }
+        }
+        .onAppear(perform: authentication.attempt)
     }
 }
 
