@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE26DCDE24EBEA2400AB566B /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26DCDD24EBEA2400AB566B /* Authentication.swift */; };
 		AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71334024EA97DB007CD5A1 /* MapView.swift */; };
 		AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */; };
 		AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		AE26DCDC24EBE80500AB566B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE26DCDD24EBEA2400AB566B /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		AE71334024EA97DB007CD5A1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AEB2608D24EA8BFA00BF8663 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
 				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
 				AEB260A724EA8F3F00BF8663 /* FileManagement.swift */,
+				AE26DCDD24EBEA2400AB566B /* Authentication.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */,
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
 				AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */,
+				AE26DCDE24EBEA2400AB566B /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
