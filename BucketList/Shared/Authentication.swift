@@ -6,10 +6,12 @@
 //  Copyright © 2020 Chris Eadie Designs. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 import LocalAuthentication
 
-struct Authentication {
+class Authentication: ObservableObject {
+    @Published var successful = false
+    
     func attempt() {
         let context = LAContext()
         var error: NSError?
@@ -23,7 +25,8 @@ struct Authentication {
                 // Authentication complete
                 DispatchQueue.main.async {
                     if success {
-                        // TODO: Authentication successful
+                        // Authentication successful
+                        self.successful = true
                     } else {
                         // TODO: Authentication unsuccessful
                     }
