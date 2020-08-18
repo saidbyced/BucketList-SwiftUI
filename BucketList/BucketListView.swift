@@ -42,7 +42,6 @@ struct BucketListView: View {
                 }
             }
         }
-        .onAppear(perform: authentication.attempt)
     }
 }
 
