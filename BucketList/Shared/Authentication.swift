@@ -12,14 +12,15 @@ import LocalAuthentication
 class Authentication: ObservableObject {
     @Published var successful = false
     
+    let reason = "We need to unlock your data."
+    let context = LAContext()
+    
     func attempt() {
-        let context = LAContext()
         var error: NSError?
         
         // Check if biometric authentication is possible
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             // Authentication possible
-            let reason = "We need to unlock your data."
             
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 // Authentication complete
