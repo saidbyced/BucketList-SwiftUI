@@ -15,7 +15,6 @@
 		AEB2609724EA8BFC00BF8663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609624EA8BFC00BF8663 /* Assets.xcassets */; };
 		AEB2609A24EA8BFC00BF8663 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */; };
 		AEB2609D24EA8BFC00BF8663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609B24EA8BFC00BF8663 /* LaunchScreen.storyboard */; };
-		AEB260A824EA8F3F00BF8663 /* FileManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB260A724EA8F3F00BF8663 /* FileManagement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEB2609C24EA8BFC00BF8663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB2609E24EA8BFC00BF8663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEB260A724EA8F3F00BF8663 /* FileManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 			children = (
 				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
 				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
-				AEB260A724EA8F3F00BF8663 /* FileManagement.swift */,
 				AE26DCDD24EBEA2400AB566B /* Authentication.swift */,
 			);
 			path = Shared;
@@ -181,7 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB260A824EA8F3F00BF8663 /* FileManagement.swift in Sources */,
 				AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */,
 				AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */,
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
