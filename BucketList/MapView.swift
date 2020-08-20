@@ -12,6 +12,8 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     @Binding var centerCoordinate: CLLocationCoordinate2D
+    @Binding var selectedPlace: MKPointAnnotation?
+    @Binding var showingPlaceDetails: Bool
     
     var annotations: [MKPointAnnotation]
     
@@ -29,6 +31,7 @@ struct MapView: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, MKMapViewDelegate {
+        
         var parent: MapView
         
         init(_ parent: MapView) {
@@ -38,6 +41,27 @@ struct MapView: UIViewRepresentable {
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
             parent.centerCoordinate = mapView.centerCoordinate
         }
+        
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            
+            let identifier = "Placemark"
+            
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            
+            if annotationView == nil {
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                
+                annotationView?.canShowCallout = true
+                
+                annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            } else {
+                annotationView?.annotation = annotation
+            }
+            
+            return annotationView
+            
+        }
+        
     }
     
     func makeCoordinator() -> Coordinator {
@@ -47,7 +71,9 @@ struct MapView: UIViewRepresentable {
 }
 
 struct MapView_Previews: PreviewProvider {
+    static let exampleLocation = MKPointAnnotation.example
+    
     static var previews: some View {
-        MapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), annotations: [MKPointAnnotation.example])
+        MapView(centerCoordinate: .constant(exampleLocation.coordinate), selectedPlace: .constant(exampleLocation), showingPlaceDetails: .constant(false), annotations: [exampleLocation])
     }
 }
