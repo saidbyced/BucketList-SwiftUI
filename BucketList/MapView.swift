@@ -62,6 +62,13 @@ struct MapView: UIViewRepresentable {
             
         }
         
+        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+            guard let placemark = view.annotation as? MKPointAnnotation else { return }
+            
+            parent.selectedPlace = placemark
+            parent.showingPlaceDetails = true
+        }
+        
     }
     
     func makeCoordinator() -> Coordinator {

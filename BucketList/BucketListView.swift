@@ -12,6 +12,8 @@ import MapKit
 struct BucketListView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [MKPointAnnotation]()
+    @State private var selectedPlace: MKPointAnnotation?
+    @State private var showingPlaceDetails = false
     
     func addNewLocation(coordinate: CLLocationCoordinate2D, title: String) {
         let newLocation = MKPointAnnotation()
@@ -23,7 +25,7 @@ struct BucketListView: View {
     
     var body: some View {
         ZStack {
-            MapView(centerCoordinate: $centerCoordinate, annotations: locations)
+            MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
                 .edgesIgnoringSafeArea(.all)
             Circle()
                 .fill(Color.accentColor.opacity(0.3))
@@ -51,6 +53,17 @@ struct BucketListView: View {
                 }
             }
         }
+        .alert(
+            isPresented: $showingPlaceDetails,
+            content: {
+                Alert(
+                    title: Text(selectedPlace?.title ?? "Unknown"),
+                    message: Text(selectedPlace?.subtitle ?? "Missing place information."),
+                    primaryButton: .default(Text("OK")),
+                    secondaryButton: .default(Text("Edit"))
+                )
+            }
+        )
     }
 }
 
