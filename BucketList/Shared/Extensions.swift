@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-extension MKPointAnnotation {
+extension MKPointAnnotation: ObservableObject {
     static var example: MKPointAnnotation {
         let annotation = MKPointAnnotation()
         annotation.title = "London"
@@ -17,5 +17,23 @@ extension MKPointAnnotation {
         annotation.coordinate = CLLocationCoordinate2D(latitude: 51.5, longitude: -0.13)
         
         return annotation
+    }
+    
+    public var wrappedTitle: String {
+        get {
+            self.title ?? "Unknown"
+        }
+        set {
+            title = newValue
+        }
+    }
+    
+    public var wrappedSubtitle: String {
+        get {
+            self.subtitle ?? "No information provided."
+        }
+        set {
+            self.subtitle = newValue
+        }
     }
 }
