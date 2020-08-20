@@ -16,6 +16,7 @@
 		AEB2609724EA8BFC00BF8663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609624EA8BFC00BF8663 /* Assets.xcassets */; };
 		AEB2609A24EA8BFC00BF8663 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */; };
 		AEB2609D24EA8BFC00BF8663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609B24EA8BFC00BF8663 /* LaunchScreen.storyboard */; };
+		AEF8A8F324EEDF4000D0DDCC /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8A8F224EEDF4000D0DDCC /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEB2609C24EA8BFC00BF8663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB2609E24EA8BFC00BF8663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF8A8F224EEDF4000D0DDCC /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE372F0324EEC69F00AE1842 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AE71334024EA97DB007CD5A1 /* MapView.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		AEB2608424EA8BFA00BF8663 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
 				AEB260A424EA8C0E00BF8663 /* Shared */,
 				AEB260A624EA8CD900BF8663 /* BucketList */,
+				AEF8A8F124EEDF2A00D0DDCC /* Edit */,
 				AEB260A524EA8C2500BF8663 /* Launch */,
 				AEB2609624EA8BFC00BF8663 /* Assets.xcassets */,
 				AEB2609E24EA8BFC00BF8663 /* Info.plist */,
@@ -105,9 +116,17 @@
 			isa = PBXGroup;
 			children = (
 				AEB2609424EA8BFB00BF8663 /* BucketListView.swift */,
-				AE71334024EA97DB007CD5A1 /* MapView.swift */,
+				AE372F0324EEC69F00AE1842 /* Map */,
 			);
 			name = BucketList;
+			sourceTree = "<group>";
+		};
+		AEF8A8F124EEDF2A00D0DDCC /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AEF8A8F224EEDF4000D0DDCC /* EditView.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +204,7 @@
 				AE372F0224EEB8A000AE1842 /* Extensions.swift in Sources */,
 				AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */,
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
+				AEF8A8F324EEDF4000D0DDCC /* EditView.swift in Sources */,
 				AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */,
 				AE26DCDE24EBEA2400AB566B /* Authentication.swift in Sources */,
 			);
