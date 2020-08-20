@@ -13,9 +13,17 @@ struct BucketListView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [MKPointAnnotation]()
     
+    func addNewLocation(coordinate: CLLocationCoordinate2D, title: String) {
+        let newLocation = MKPointAnnotation()
+        newLocation.coordinate = coordinate
+        newLocation.title = title
+        
+        self.locations.append(newLocation)
+    }
+    
     var body: some View {
         ZStack {
-            MapView(centerCoordinate: $centerCoordinate)
+            MapView(centerCoordinate: $centerCoordinate, annotations: locations)
                 .edgesIgnoringSafeArea(.all)
             Circle()
                 .fill(Color.accentColor.opacity(0.3))
@@ -28,9 +36,7 @@ struct BucketListView: View {
                 HStack {
                     Button(
                         action: {
-                            let newLocation = MKPointAnnotation()
-                            newLocation.coordinate = self.centerCoordinate
-                            self.locations.append(newLocation)
+                            self.addNewLocation(coordinate: self.centerCoordinate, title: "Example location")
                         },
                         label: {
                             Image(systemName: "plus")
