@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE26DCDE24EBEA2400AB566B /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26DCDD24EBEA2400AB566B /* Authentication.swift */; };
+		AE372F0224EEB8A000AE1842 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE372F0124EEB8A000AE1842 /* Extensions.swift */; };
 		AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71334024EA97DB007CD5A1 /* MapView.swift */; };
 		AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */; };
 		AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		AE26DCDC24EBE80500AB566B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AE26DCDD24EBEA2400AB566B /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		AE372F0124EEB8A000AE1842 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AE71334024EA97DB007CD5A1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AEB2608D24EA8BFA00BF8663 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		AEB2608F24EA8BFB00BF8663 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
+				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
 				AEB260A424EA8C0E00BF8663 /* Shared */,
 				AEB260A624EA8CD900BF8663 /* BucketList */,
 				AEB260A524EA8C2500BF8663 /* Launch */,
@@ -83,9 +87,8 @@
 		AEB260A424EA8C0E00BF8663 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
-				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
 				AE26DCDD24EBEA2400AB566B /* Authentication.swift */,
+				AE372F0124EEB8A000AE1842 /* Extensions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB2609124EA8BFB00BF8663 /* AppDelegate.swift in Sources */,
+				AE372F0224EEB8A000AE1842 /* Extensions.swift in Sources */,
 				AE71334124EA97DB007CD5A1 /* MapView.swift in Sources */,
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
 				AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */,
