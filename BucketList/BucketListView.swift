@@ -22,6 +22,8 @@ struct BucketListView: View {
         newLocation.title = title
         
         self.locations.append(newLocation)
+        self.selectedPlace = newLocation
+        self.showingEditScreen = true
     }
     
     var body: some View {
@@ -65,6 +67,14 @@ struct BucketListView: View {
                         self.showingEditScreen = true
                     }
                 )
+            }
+        )
+        .sheet(
+            isPresented: $showingEditScreen,
+            content: {
+                if self.selectedPlace != nil {
+                    EditView(placemark: self.selectedPlace!)
+                }
             }
         )
     }

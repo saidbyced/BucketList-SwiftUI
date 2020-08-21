@@ -16,6 +16,7 @@
 		AEB2609724EA8BFC00BF8663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609624EA8BFC00BF8663 /* Assets.xcassets */; };
 		AEB2609A24EA8BFC00BF8663 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */; };
 		AEB2609D24EA8BFC00BF8663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB2609B24EA8BFC00BF8663 /* LaunchScreen.storyboard */; };
+		AECC67AE24EFD70500D578B6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC67AD24EFD70500D578B6 /* Result.swift */; };
 		AEF8A8F324EEDF4000D0DDCC /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8A8F224EEDF4000D0DDCC /* EditView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		AEB2609924EA8BFC00BF8663 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEB2609C24EA8BFC00BF8663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEB2609E24EA8BFC00BF8663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECC67AD24EFD70500D578B6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AEF8A8F224EEDF4000D0DDCC /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				AEB2609024EA8BFB00BF8663 /* AppDelegate.swift */,
 				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
 				AEB260A424EA8C0E00BF8663 /* Shared */,
+				AECC67AC24EFD43E00D578B6 /* Web */,
 				AEB260A624EA8CD900BF8663 /* BucketList */,
 				AEB260A524EA8C2500BF8663 /* Launch */,
 				AEB2609624EA8BFC00BF8663 /* Assets.xcassets */,
@@ -119,6 +122,14 @@
 				AEF8A8F124EEDF2A00D0DDCC /* Edit */,
 			);
 			name = BucketList;
+			sourceTree = "<group>";
+		};
+		AECC67AC24EFD43E00D578B6 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				AECC67AD24EFD70500D578B6 /* Result.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 		AEF8A8F124EEDF2A00D0DDCC /* Edit */ = {
@@ -206,6 +217,7 @@
 				AEB2609324EA8BFB00BF8663 /* SceneDelegate.swift in Sources */,
 				AEF8A8F324EEDF4000D0DDCC /* EditView.swift in Sources */,
 				AEB2609524EA8BFB00BF8663 /* BucketListView.swift in Sources */,
+				AECC67AE24EFD70500D578B6 /* Result.swift in Sources */,
 				AE26DCDE24EBEA2400AB566B /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
