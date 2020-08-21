@@ -78,7 +78,6 @@
 				AEB2609224EA8BFB00BF8663 /* SceneDelegate.swift */,
 				AEB260A424EA8C0E00BF8663 /* Shared */,
 				AEB260A624EA8CD900BF8663 /* BucketList */,
-				AEF8A8F124EEDF2A00D0DDCC /* Edit */,
 				AEB260A524EA8C2500BF8663 /* Launch */,
 				AEB2609624EA8BFC00BF8663 /* Assets.xcassets */,
 				AEB2609E24EA8BFC00BF8663 /* Info.plist */,
@@ -117,6 +116,7 @@
 			children = (
 				AEB2609424EA8BFB00BF8663 /* BucketListView.swift */,
 				AE372F0324EEC69F00AE1842 /* Map */,
+				AEF8A8F124EEDF2A00D0DDCC /* Edit */,
 			);
 			name = BucketList;
 			sourceTree = "<group>";
