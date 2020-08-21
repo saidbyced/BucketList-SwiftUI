@@ -14,6 +14,7 @@ struct BucketListView: View {
     @State private var locations = [MKPointAnnotation]()
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
+    @State private var showingEditScreen = false
     
     func addNewLocation(coordinate: CLLocationCoordinate2D, title: String) {
         let newLocation = MKPointAnnotation()
@@ -60,7 +61,9 @@ struct BucketListView: View {
                     title: Text(selectedPlace?.title ?? "Unknown"),
                     message: Text(selectedPlace?.subtitle ?? "Missing place information."),
                     primaryButton: .default(Text("OK")),
-                    secondaryButton: .default(Text("Edit"))
+                    secondaryButton: .default(Text("Edit")) {
+                        self.showingEditScreen = true
+                    }
                 )
             }
         )
