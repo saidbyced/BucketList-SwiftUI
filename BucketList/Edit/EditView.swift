@@ -13,6 +13,10 @@ struct EditView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var placemark: MKPointAnnotation
     
+    enum LoadingState {
+        case loading, loaded, failed
+    }
+    
     var body: some View {
         NavigationView {
             Form {
