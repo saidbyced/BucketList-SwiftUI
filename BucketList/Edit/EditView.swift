@@ -56,7 +56,7 @@ struct EditView: View {
                             Text(page.title)
                                 .font(.headline)
                             + Text(": ")
-                            + Text("Page desctiption here")
+                                + Text(page.description)
                         }
                     } else if loadingState == .loading {
                         Text("Loading...")
@@ -76,7 +76,7 @@ struct EditView: View {
                 }
             )
         )
-                .onAppear(perform: fetchNearbyPlaces)
+        .onAppear(perform: fetchNearbyPlaces)
         }
     }
 }
